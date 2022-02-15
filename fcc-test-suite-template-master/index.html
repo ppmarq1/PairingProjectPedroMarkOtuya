@@ -1,28 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <title>Fork Me! FCC: Test Suite Template</title>
+  <meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content=
+		"width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+	<title>
+		A Simple Survey Form
+	</title>
   </head>
-
-  <body>
-
-    <p>Hello World!, we are software developers.</p>
-    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
-
-    <!--
-
-    Hello Camper!
-
-    For now, the test suite only works in Chrome!
-    Please read the README below in the JS Editor before beginning.
-    Feel free to delete this message once you have read it.
-    Good luck and Happy Coding!
-
-    - The freeCodeCamp Team
-
-    -->
+    <body>
+      <h1>Pedromark Survey Form</h1>
+    
+      <!-- Form creation -->
+      <form id="form">
+    
+        <!-- Details about the form -->
+        <div class="form-control">
+          <label for="name" id="label-name">
+            Name
+          </label>
+    
+          <!-- Input Type Text -->
+          <input type="text"
+            id="name"
+            placeholder="Enter your name" />
+        </div>
+    
+        <div class="form-control">
+          <label for="email" id="label-email">
+            Email
+          </label>
+    
+          <!-- Input Type Email-->
+          <input type="email"
+            id="email"
+            placeholder="Enter your email" />
+        </div>
+    
+        <div class="form-control">
+          <label for="age" id="label-age">
+            Age
+          </label>
+    
+          <!-- Input Type Text -->
+          <input type="text"
+            id="age"
+            placeholder="Enter your age" />
+        </div>
+    
+        <div class="form-control">
+          <label for="role" id="label-role">
+            Please, Select an Option which describes you best.
+          </label>
+          
+          <!-- Dropdown options -->
+          <select name="role" id="role">
+            <option value="student">Student</option>
+            <option value="intern">Teacher</option>
+            <option value="professional">
+              Staff
+            </option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+    
+        <div class="form-control">
+          <label>
+            Do you find Pedromark's Form Good?
+          </label>
+    
+          <!-- Input Type Radio Button -->
+          <label for="recommed-1">
+            <input type="radio"
+              id="recommed-1"
+              name="recommed">Yes</input>
+          </label>
+          <label for="recommed-2">
+            <input type="radio"
+              id="recommed-2"
+              name="recommed">No</input>
+          </label>
+          <label for="recommed-3">
+            <input type="radio"
+              id="recommed-3"
+              name="recommed">Maybe</input>
+          </label>
+        </div>
+    
+        <div class="form-control">
+          <label>Languages & framework known?
+            <small>(Check all that apply)</small>
+          </label>
+          <!-- Input Checkbox details -->
+          <label for="inp-1">
+            <input type="checkbox"
+              name="inp">C</input></label>
+          <label for="inp-2">
+            <input type="checkbox"
+              name="inp">C++</input></label>
+          <label for="inp-3">
+            <input type="checkbox"
+              name="inp">jquery</input></label>
+          <label for="inp-4">
+            <input type="checkbox"
+              name="inp">Java</input></label>
+          <label for="inp-5">
+            <input type="checkbox"
+              name="inp">Python</input></label>
+          <label for="inp-6">
+            <input type="checkbox"
+              name="inp">JavaScript</input></label>
+          <label for="inp-7">
+            <input type="checkbox"
+              name="inp">React</input></label>
+          <label for="inp-7">
+            <input type="checkbox"
+              name="inp">Angular</input></label>
+          <label for="inp-7">
+            <input type="checkbox"
+              name="inp">Django</input></label>
+          <label for="inp-7">
+            <input type="checkbox"
+              name="inp">vue.js</input></label>
+        </div>
+    
+        <div class="form-control">
+          <label for="comment">
+            Feel free to leave feedbacks or recomendations.
+          </label>
+    
+          <!-- multi-line text input control -->
+          <textarea name="comment" id="comment"
+            placeholder="Enter your comment here">
+          </textarea>
+        </div>
+    
+        <!-- Multi-line Text Input Control -->
+        <button type="submit" value="submit">
+          Submit
+        </button>
+      </form>
     <script  src="js/index.js"></script>
   </body>
 </html>
